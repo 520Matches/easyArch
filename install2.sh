@@ -19,6 +19,7 @@ echo "$hostname" > /etc/hostname
 
 # Set the locale
 echo en_US.UTF-8 UTF-8 >> /etc/locale.gen
+echo zh_CN.UTF-8 UTF-8 >> /etc/locale.gen
 locale-gen
 
 # Set the german keyboard layout to be loaded automatically
