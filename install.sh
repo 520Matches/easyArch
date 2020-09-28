@@ -55,7 +55,7 @@ mount /dev/"$disk"1 /mnt/boot
 pacman -Sy
 
 # Install the base system
-pacstrap /mnt base base-devel linux linux-firmware wpa_supplicant grub acpid xorg xorg-drivers alsa-utils pulseaudio pulseaudio-alsa wireless_tools networkmanager network-manager-applet sudo linux-headers dosfstools efibootmgr
+pacstrap /mnt base base-devel linux linux-firmware iwd wpa_supplicant grub acpid xorg xorg-drivers alsa-utils pulseaudio pulseaudio-alsa wireless_tools networkmanager network-manager-applet sudo linux-headers dosfstools efibootmgr
 
 # Automatically generate the fstab file from the mount configuration
 genfstab -Lp /mnt > /mnt/etc/fstab

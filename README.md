@@ -15,7 +15,7 @@
   ```
 6. Make both scripts executable:
   ```
-  cd easyarch/
+  cd easyArch/
   chmod +x install.sh install2.sh
   ```
 7. Run the install script:
