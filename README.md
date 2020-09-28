@@ -15,7 +15,7 @@
   ```
 5. Clone the script to your machine:
   ```
-  git clone https://github.com/S0ulf7y/easyarch.github
+  git clone https://github.com/520Matches/easyArch.git
   ```
 6. Make both scripts executable:
   ```
