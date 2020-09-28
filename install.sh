@@ -55,17 +55,13 @@ mount /dev/"$disk"1 /mnt/boot
 pacman -Sy
 
 # Install the base system
-pacstrap /mnt base base-devel linux linux-firmware wpa_supplicant grub acpid xorg xorg-drivers alsa-utils pulseaudio pulseaudio-alsa wireless_tools networkmanager network-manager-applet sudo linux-headers dosfstools efibootmgr slock 
+pacstrap /mnt base base-devel linux linux-firmware wpa_supplicant grub acpid xorg xorg-drivers alsa-utils pulseaudio pulseaudio-alsa wireless_tools networkmanager network-manager-applet sudo linux-headers dosfstools efibootmgr
 
 # Automatically generate the fstab file from the mount configuration
 genfstab -Lp /mnt > /mnt/etc/fstab
 
 # Copy the second file for the advanced config process to the hdd
 cp ./install2.sh /mnt
-
-# Copy the files for the X11 locale setup to the hdd
-#cp ./setx11locale.service /mnt/etc/systemd/system
-#cp ./setx11locale /mnt/usr/bin
 
 # Switch to the newly installed system and run the second file
 arch-chroot /mnt /install2.sh

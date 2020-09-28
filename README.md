@@ -5,10 +5,6 @@
 
 1. Boot from an Arch ISO
 2. Make sure your computer is connected to the internet
-3. Activate the german keyboard layout:
-  ```
-  loadkeys de
-  ```
 4. Update pacman and install git:
   ```
   pacman -Sy && pacman -S git --noconfirm

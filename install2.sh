@@ -18,10 +18,7 @@ read -p "Please enter the new hostname: " hostname
 echo "$hostname" > /etc/hostname
 
 # Set the locale
-#echo LANG=de_DE.UTF-8 > /etc/locale.conf
 echo en_US.UTF-8 UTF-8 >> /etc/locale.gen
-#echo de_DE ISO-8859-1 >> /etc/locale.gen
-#echo de_DE@euro ISO-8859-15 >> /etc/locale.gen
 locale-gen
 
 # Set the german keyboard layout to be loaded automatically
@@ -45,14 +42,8 @@ passwd
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
-# Enable all necessary services
-#systemctl enable acpid avahi-daemon org.cups.cupsd cronie systemd-timesyncd slim NetworkManager wpa_supplicant setx11locale
-
 # Disable the default DHCP service
 #systemctl disable dhcpcd dhcpcd@
-
-# Make the script for the X11 keyymap executable
-#chmod +x /usr/bin/setx11locale
 
 # Create a new user
 echo "Please enter your user name"
