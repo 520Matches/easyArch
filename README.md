@@ -1,4 +1,4 @@
-- fork https://github.com/S0ulf7y/easyarch
+- refer to https://github.com/S0ulf7y/easyarch
 # easy install arch linux
 
 ## Installation
